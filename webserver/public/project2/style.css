@@ -1,0 +1,117 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white; /* Ensures no white border around the edges AIIIII */ 
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+#container {
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction:column; 
+    align-items: center;  
+}
+
+#container2 {
+    height: 100vh; /* Makes the div full screen height */
+    width: 100vw;  /* Makes the div full screen width */
+    overflow-y: hidden;
+    z-index: 10;
+    display: flex; /* Enables Flexbox */
+}
+
+#myBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    font-size: 420%;
+    transform: translate(-50%,-50%);
+    opacity: 100;
+    background-color: black;
+    color: white;
+    z-index: 100;
+}
+
+#myBtn:hover {
+    transition: top 0.1s ease-in;
+    position: absolute;
+    top:49.5%;
+    left: 50%;
+    font-size: 430%;
+    transform: translate(-50%,-50%);
+    opacity: 100;
+    border-radius: 4;
+    border-color: blue;
+}
+
+.textBody {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    font-size: 20px;
+    font-size: 300%;
+    transition: 1s ease-out;
+    border-radius: 10px;
+    transition: 1s ease-out;
+    display:inline-block
+
+
+
+}
+
+.touchTab {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    display: flex; /* Make this a flex container */
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.touchBar {
+    border: 0px;
+    z-index: 1000;
+    width: 100%;
+    height: 60px;
+    font-size: 50px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center contents vertically in the bar */
+    transition: .2s ease-out;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow:0px 0px 10px lightgray;
+
+}
+
+.touchBar:hover {
+    border: 0px;
+    font-size: 60px;
+    z-index: 1000;
+    width: 105%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center contents vertically in the bar */
+    transition: 1s ease-out;
+    border-radius: 10px;
+
+}
+
+#clockTitle{
+    position: relative;
+    top: 20px;
+    font-size: 50px;
+    text-decoration: underline 2px;
+}
