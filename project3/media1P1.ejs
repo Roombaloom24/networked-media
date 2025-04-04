@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>'wtf'</title>
+        <link rel='stylesheet' href="style.css">
+        <%- include('fonts.ejs') %>
+
+    </head>
+    <body>
+        <div class="umbrellaDiv">
+            <%- include('static.ejs')%>
+            <div class="pageMedia">
+                <!-- Add this image tag -->
+                <div class = 'gifHolder'>
+                    <img class = 'sideGif'src="animation1.gif"  alt="GIF Image">
+                    <img class = 'sideGif'src="animation1.gif"  alt="GIF Image">
+                    <img class = 'sideGif'src="animation1.gif"  alt="GIF Image">
+                    <img class = 'sideGif'src="animation1.gif"  alt="GIF Image">
+                    <img class = 'sideGif'src="animation1.gif"  alt="GIF Image">
+                    <img class = 'sideGif'src="animation1.gif"  alt="GIF Image">
+                    <img class = 'sideGif'src="animation1.gif"  alt="GIF Image">
+                    <img class = 'sideGif'src="animation1.gif"  alt="GIF Image">
+
+                    
+
+                    
+
+                </div>
+
+                <div class="mediaContent">
+                    
+                    <a class= 'back-button' href="/person1">Back to spotlights</a>
+                    <% if (img) { %>
+                        <img class = 'imageMedia' src="/<%= img %>" alt="User uploaded media">
+                    <% } %>
+                    <div class='user'>
+                       <b> <%= user %></b>
+                    </div>
+                    <br>
+                    <br>
+                    <div class='text'>
+                        <%= text %>
+                    </div>
+                    
+
+                </div>
+                <div class='gifHolder'>
+                    <img src="animation1.gif" class = 'sideGif2' alt="GIF Image">
+                    <img src="animation1.gif" class = 'sideGif2' alt="GIF Image">
+                    <img src="animation1.gif" class = 'sideGif2' alt="GIF Image">
+                    <img src="animation1.gif" class = 'sideGif2' alt="GIF Image">
+                    <img src="animation1.gif" class = 'sideGif2' alt="GIF Image">
+                    <img src="animation1.gif" class = 'sideGif2' alt="GIF Image">
+                    <img src="animation1.gif" class = 'sideGif2' alt="GIF Image">
+                    <img src="animation1.gif" class = 'sideGif2' alt="GIF Image">
+
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

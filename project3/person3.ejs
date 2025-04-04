@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>'wtf'</title>
+        <link rel = 'stylesheet' href="style.css">
+        <script src="script.js"></script> 
+        <%- include('fonts.ejs') %>
+
+
+    </head>
+    <body>
+        <div class="umbrellaDiv">
+            <%- include('static.ejs')%>
+            <div class ="peoplePageDiv">
+                <div class="carousel">
+                    <button id="prevBtn">❮</button>
+                    <div id="carousel-container">
+                        <a href = '/p1m1' class="carousel-item center">
+                            <% if (img) { %>
+                                <img class = 'imageMedia' src="/<%= img %>" alt="User uploaded media">
+                            <% } %>
+                       </a>
+                         <a href = '/p1m2' class="carousel-item right">
+                            <% if (img2) { %>
+                                <img class = 'imageMedia' src="/<%= img2 %>" alt="User uploaded media">
+                           <% } %>
+                       </a>
+                         <a href = '/p1m3' class="carousel-item left">
+                           <% if (img3) { %>
+                               <img class = 'imageMedia' src="/<%= img3 %>" alt="User uploaded media">
+                          <% } %>
+                       </a>
+                    </div>
+                    <button id="nextBtn">❯</button>
+                </div>
+                  
+            </div>
+        </div>
+    </body>
+</html>

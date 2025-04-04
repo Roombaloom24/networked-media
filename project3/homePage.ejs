@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>'wtf'</title>
+        <link rel="stylesheet" href="style.css">
+        <%- include('fonts.ejs') %>
+    </head>
+    <body>
+        <div class="umbrellaDiv">
+            <%- include('static.ejs') %>
+            <div class="mediaPage">
+                <img class="roadPic" src="road.png" alt="road">
+                <img class="roadWalkPic" src="roadwalk.png" alt="roadwPeople">
+                <img class="signPic" src="sign.png" alt="sign">
+                <img class="carPic" src="car.png" alt="car">
+
+                <div class="mediaColumns">
+                    <!-- Person 1 -->
+                    <div class="id" id="id-left">
+                        <div class="id-border">
+                            <a href="/person1">
+                                <img class="id-template" src="id.png" alt="id">
+                                <% if (img) { %>
+                                    <img class="idPic" src="/<%= img %>" alt="User uploaded media">
+                                <% } %>
+
+                                <div class="name">
+                                    <% if (name && lastName) { %>
+                                        <div><b><%= name %></b></div>
+                                        <div><b><%= lastName %></b></div>
+                                    <% } %>
+                                </div>
+
+                                <div class="signs">
+                                    <% if (sun && moon && rising) { %>
+                                        <div><%= sun %></div>
+                                        <div><%= moon %></div>
+                                        <div><%= rising %></div>
+                                    <% } %>
+                                </div>
+
+                                <% if (eyes && hair && age) { %>
+                                    <div class="looks">
+                                        <div class="hair"><%= hair %></div>
+                                        <div class="eyes"><%= eyes %></div>
+                                        <div class="age"><%= age %></div>
+                                    </div>
+                                <% } %>
+
+                                <div class="love-hate">
+                                    <%= love %>
+                                    <br><br>
+                                    <%= hate %>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Person 2 -->
+                    <div class="id" id="id-middle">
+                        <div class="id-border">
+                            <a href="/person2">
+                                <img class="id-template" src="id.png" alt="id">
+                                <% if (img2) { %>
+                                    <img class="idPic2" src="/<%= img2 %>" alt="User uploaded media">
+                                <% } %>
+
+                                <div class="name">
+                                    <% if (name2 && lastName2) { %>
+                                        <div><b><%= name2 %></b></div>
+                                        <div><b><%= lastName2 %></b></div>
+                                    <% } %>
+                                </div>
+
+                                <div class="signs">
+                                    <% if (sun2 && moon2 && rising2) { %>
+                                        <div><%= sun2 %></div>
+                                        <div><%= moon2 %></div>
+                                        <div><%= rising2 %></div>
+                                    <% } %>
+                                </div>
+
+                                <% if (eyes2 && hair2 && age2) { %>
+                                    <div class="looks">
+                                        <div class="hair"><%= hair2 %></div>
+                                        <div class="eyes"><%= eyes2 %></div>
+                                        <div class="age"><%= age2 %></div>
+                                    </div>
+                                <% } %>
+
+                                <div class="love-hate">
+                                    <%= love2 %>
+                                    <br><br>
+                                    <%= hate2 %>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Person 3 -->
+                    <div class="id" id="id-right">
+                        <div class="id-border">
+                            <a href="/person3">
+                                <img class="id-template" src="id.png" alt="id">
+                                <% if (img3) { %>
+                                    <img class="idPic3" src="/<%= img3 %>" alt="User uploaded media">
+                                <% } %>
+
+                                <div class="name">
+                                    <% if (name3 && lastName3) { %>
+                                        <div><b><%= name3 %></b></div>
+                                        <div><b><%= lastName3 %></b></div>
+                                    <% } %>
+                                </div>
+
+                                <div class="signs">
+                                    <% if (sun3 && moon3 && rising3) { %>
+                                        <div><%= sun3 %></div>
+                                        <div><%= moon3 %></div>
+                                        <div><%= rising3 %></div>
+                                    <% } %>
+                                </div>
+
+                                <% if (eyes3 && hair3 && age3) { %>
+                                    <div class="looks">
+                                        <div class="hair"><%= hair3 %></div>
+                                        <div class="eyes"><%= eyes3 %></div>
+                                        <div class="age"><%= age3 %></div>
+                                    </div>
+                                <% } %>
+
+                                <div class="love-hate">
+                                    <%= love3 %>
+                                    <br><br>
+                                    <%= hate3 %>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
